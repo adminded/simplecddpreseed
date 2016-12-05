@@ -1,0 +1,7 @@
+#!/bin/bash
+
+tar -xf /root/testsh.tar
+/root/testsh.sh
+echo "just a test" >> /root/testfile2
+
+sed -i '/^PermitRootLogin/s/without-password/yes/g' /etc/ssh/sshd_config
